@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Staff - Christian Progressive College</title>
+  <link rel="icon" type="image/png" href="media/logos.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f8ff;
+      color: #333;
+    }
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+    }
+    .logo {
+      display: block;
+      margin: 0 auto 10px auto; /* Align logo like the other pages */
+      max-width: 150px;
+      height: auto;
+    }
+    .menu-icon {
+      display: none;
+      font-size: 30px;
+      cursor: pointer;
+      color: white;
+      position: absolute;
+      right: 20px;
+      top: 20px;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #00509E;
+      padding: 10px 0;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+    }
+    nav ul li {
+      position: relative;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      display: block;
+    }
+    nav ul li a:hover {
+      background-color: #003366;
+    }
+    nav ul li ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #00509E;
+      padding: 0;
+      list-style: none;
+    }
+    nav ul li:hover ul {
+      display: block;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+      background: white;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    h1, h2 {
+      color: #003366;
+      text-align: center;
+    }
+    p {
+      line-height: 1.6;
+      margin: 15px 0;
+      text-align: center;
+    }
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 20px;
+    }
+    .social-media-icons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px;
+      background-color: #f0f0f0; 
+    }
+    .social-icon {
+      font-size: 30px;
+      color: #333; 
+      text-decoration: none;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+    .social-icon:hover {
+      color: #0073e6; 
+      transform: scale(1.1); 
+    }
+    .social-icon i {
+      font-size: 40px; 
+    }
+    /* Gallery styling (grid layout and image effects) */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 15px;
+      justify-items: center;
+      margin-top: 20px;
+    }
+    .gallery-item {
+      text-align: center;
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .gallery-item img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    }
+    @media (max-width: 768px) {
+      .menu-icon {
+        display: block;
+      }
+      nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #00509E;
+        width: 200px;
+      }
+      nav ul.show {
+        display: flex;
+      }
+    }
+  </style>
+  <script>
+    function toggleMenu() {
+      const navMenu = document.getElementById("nav-menu");
+      navMenu.classList.toggle("show");
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Christian Progressive College</h1>
+    <img src="media/logos.png" alt="Christian Progressive College Logo" class="logo" />
+    <span class="menu-icon" onclick="toggleMenu()">&#9776;</span>
+    <nav>
+      <ul id="nav-menu">
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="staff.html">Staff</a></li>
+        <li><a href="primaryschool.html">Primary School</a></li>
+        <li><a href="highschool.html">High School</a></li>
+        <li><a href="extracurriculum.html">Extra Curriculum</a></li>
+        <li><a href="codeofconduct.html">Code of Conduct</a></li>
+        <li><a href="schoolfees.html">School Fees</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Meet Our Staff</h2>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="media/staff1.jpg" alt="Staff Member 1" />
+        <p>Staff Name 1</p>
+      </div>
+      <div class="gallery-item">
+        <img src="media/staff2.jpg" alt="Staff Member 2" />
+        <p>Staff Name 2</p>
+      </div>
+      <div class="gallery-item">
+        <img src="media/staff3.jpg" alt="Staff Member 3" />
+        <p>Staff Name 3</p>
+      </div>
+      <div class="gallery-item">
+        <img src="media/staff4.jpg" alt="Staff Member 4" />
+        <p>Staff Name 4</p>
+      </div>
+      <div class="gallery-item">
+        <img src="media/staff5.jpg" alt="Staff Member 5" />
+        <p>Staff Name 5</p>
+      </div>
+      <div class="gallery-item">
+        <img src="media/staff6.jpg" alt="Staff Member 6" />
+        <p>Staff Name 6</p>
+      </div>
+      <div class="gallery-item">
+        <img src="media/staff7.jpg" alt="Staff Member 7" />
+        <p>Staff Name 7</p>
+      </div>
+      <div class="gallery-item">
+        <img src="media/staff8.jpg" alt="Staff Member 8" />
+        <p>Staff Name 8</p>
+      </div>
+      <div class="gallery-item">
+        <img src="media/staff9.jpg" alt="Staff Member 9" />
+        <p>Staff Name 9</p>
+      </div>
+      <div class="gallery-item">
+        <img src="media/staff10.jpg" alt="Staff Member 10" />
+        <p>Staff Name 10</p>
+      </div>
+      <div class="gallery-item">
+        <img src="media/staff11.jpg" alt="Staff Member 11" />
+        <p>Staff Name 11</p>
+      </div>
+      <div class="gallery-item">
+        <img src="media/staff12.jpg" alt="Staff Member 12" />
+        <p>Staff Name 12</p>
+      </div>
+      <div class="gallery-item">
+        <img src="media/staff13.jpg" alt="Staff Member 13" />
+        <p>Staff Name 13</p>
+      </div>
+      <div class="gallery-item">
+        <img src="media/staff14.jpg" alt="Staff Member 14" />
+        <p>Staff Name 14</p>
+      </div>
+      <div class="gallery-item">
+        <img src="media/staff15.jpg" alt="Staff Member 15" />
+        <p>Staff Name 15</p>
+      </div>
+      <div class="gallery-item">
+        <img src="media/staff16.jpg" alt="Staff Member 16" />
+        <p>Staff Name 16</p>
+      </div>
+      <div class="gallery-item">
+        <img src="media/staff17.jpg" alt="Staff Member 17" />
+        <p>Staff Name 17</p>
+      </div>
+      <div class="gallery-item">
+        <img src="media/staff18.jpg" alt="Staff Member 18" />
+        <p>Staff Name 18</p>
+      </div>
+    </div>
+    <p>
+      Our dedicated staff at Christian Progressive College are committed to excellence in teaching and student support. With years of experience and a passion for education, they work tirelessly to help every student achieve success.
+    </p>
+  </div>
+
+  <footer>
+    <p>Please follow us:</p>
+    <div class="social-media-icons">
+      <a href="https://www.instagram.com/christianprogressivecollege?igsh=MWsydXhkdnltdG51Mw==" target="_blank" class="social-icon">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="https://www.tiktok.com/@christianprogressivecol3?_t=ZM-8te3luifLjK&_r=1" target="_blank" class="social-icon">
+        <i class="fa-brands fa-tiktok"></i>
+      </a>
+      <a href="https://youtube.com/@christianprogressivecollege?si=Fpnvi50gGpRe7Qmb" target="_blank" class="social-icon">
+        <i class="fa-brands fa-youtube"></i>
+      </a>
+    </div>
+    <p>&copy; 2025 Christian Progressive College. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

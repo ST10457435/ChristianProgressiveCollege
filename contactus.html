@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - Christian Progressive College</title>
+  <link rel="icon" type="image/png" href="media/logos.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f8ff;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+    }
+    .logo {
+      display: block;
+      margin: 0 auto 10px auto;
+      max-width: 150px;
+      height: auto;
+    }
+    .menu-icon {
+      display: none;
+      font-size: 30px;
+      cursor: pointer;
+      color: white;
+      position: absolute;
+      right: 20px;
+      top: 20px;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #00509E;
+      padding: 10px 0;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+    }
+    nav ul li {
+      position: relative;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      display: block;
+    }
+    nav ul li a:hover {
+      background-color: #003366;
+    }
+    nav ul li ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #00509E;
+      padding: 0;
+      list-style: none;
+    }
+    nav ul li:hover ul {
+      display: block;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+      background: white;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    h1, h2, h3 {
+      color: #003366;
+      text-align: center;
+    }
+    p {
+      margin: 15px 0;
+      text-align: center;
+    }
+    .contact-details,
+    .operating-hours {
+      margin: 20px 0;
+      padding: 20px;
+      background-color: #e6f0fa;
+      border-left: 5px solid #00509E;
+    }
+    .map-container {
+      text-align: center;
+      margin: 30px 0;
+    }
+    .directions-btn {
+      display: inline-block;
+      background-color: #00509E;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 15px;
+      transition: background-color 0.3s ease;
+    }
+    .directions-btn:hover {
+      background-color: #003366;
+    }
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 20px;
+    }
+    .social-media-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+    background-color: #f0f0f0; 
+}
+
+.social-icon {
+    font-size: 30px;
+    color: #333; 
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #0073e6; 
+    transform: scale(1.1); 
+}
+
+.social-icon i {
+    font-size: 40px; 
+}
+
+  
+    @media (max-width: 768px) {
+      .menu-icon {
+        display: block;
+      }
+      nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #00509E;
+        width: 200px;
+      }
+      nav ul.show {
+        display: flex;
+      }
+    }
+  </style>
+  <script>
+    function toggleMenu() {
+      const navMenu = document.getElementById("nav-menu");
+      navMenu.classList.toggle("show");
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Christian Progressive College</h1>
+    <!-- Logo added here -->
+    <img src="media/logos.png" alt="School Logo" class="logo">
+    <span class="menu-icon" onclick="toggleMenu()">&#9776;</span>
+    <nav>
+      <ul id="nav-menu">
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="staff.html">Staff</a></li>
+        <li><a href="primaryschool.html">Primary School</a></li>
+        <li><a href="highschool.html">High School</a></li>
+        <li><a href="extracurriculum.html">Extra Curriculum</a></li>
+        <li><a href="codeofconduct.html">Code of Conduct</a></li>
+        <li><a href="schoolfees.html">School Fees</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Contact Us</h2>
+    <div class="contact-details">
+      <h3>Get in Touch</h3>
+      <p><strong>Phone:</strong> 012 328 7944</p>
+      <p><strong>Email:</strong> christianprogressivecollege@gmail.com</p>
+    </div>
+
+    <div class="operating-hours">
+      <h3>Operating Hours</h3>
+      <p><strong>Monday - Friday:</strong> 7:00 AM - 4:00 PM</p>
+      <p><strong>Saturday & Sunday:</strong> Closed</p>
+    </div>
+
+    <div class="map-container">
+      <h3>Our Location</h3>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14375.193556379018!2d28.190568!3d-25.74418!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9563069c870fa5%3A0x8019ddf11cdca843!2sChristian%20Progressive%20College!5e0!3m2!1sen!2sus!4v1738460642505!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <br />
+      <a class="directions-btn" href="https://www.google.com/maps/dir/?api=1&destination=Christian+Progressive+College" target="_blank">
+        Get Directions
+      </a>
+    </div>
+  </div>
+
+  <footer>
+    <p>Please follow us:</p>
+<div class="social-media-icons">
+        <a href="https://www.instagram.com/christianprogressivecollege?igsh=MWsydXhkdnltdG51Mw==" target="_blank" class="social-icon">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+    <a href="https://www.tiktok.com/@christianprogressivecol3?_t=ZM-8te3luifLjK&_r=1" target="_blank" class="social-icon">
+        <i class="fa-brands fa-tiktok"></i>
+    </a>
+    <a href="https://youtube.com/@christianprogressivecollege?si=Fpnvi50gGpRe7Qmb" target="_blank" class="social-icon">
+        <i class="fa-brands fa-youtube"></i>
+    </a>
+  </div>
+    <p>&copy; 2025 Christian Progressive College. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

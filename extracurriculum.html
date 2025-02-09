@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Curriculum - Christian Progressive College</title>
+  <link rel="icon" type="image/png" href="media/logos.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f8ff;
+      color: #333;
+    }
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+    }
+    .logo {
+      display: block;
+      margin: 0 auto 10px auto;
+      max-width: 150px;
+      height: auto;
+    }
+    .menu-icon {
+      display: none;
+      font-size: 30px;
+      cursor: pointer;
+      color: white;
+      position: absolute;
+      right: 20px;
+      top: 20px;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #00509E;
+      padding: 10px 0;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+    }
+    nav ul li {
+      position: relative;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      display: block;
+    }
+    nav ul li a:hover {
+      background-color: #003366;
+    }
+    nav ul li ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #00509E;
+      padding: 0;
+      list-style: none;
+    }
+    nav ul li:hover ul {
+      display: block;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+      background: white;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    h1, h2 {
+      color: #003366;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 15px;
+      margin: 20px 0;
+    }
+    .gallery img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 20px;
+    }
+    .social-media-icons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px;
+      background-color: #f0f0f0;
+    }
+
+    .social-icon {
+      font-size: 30px;
+      color: #333;
+      text-decoration: none;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    .social-icon:hover {
+      color: #0073e6;
+      transform: scale(1.1);
+    }
+
+    .social-icon i {
+      font-size: 40px;
+    }
+
+    /* Mobile responsiveness */
+    @media (max-width: 768px) {
+      .menu-icon {
+        display: block;
+      }
+      nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #00509E;
+        width: 200px;
+      }
+      nav ul.show {
+        display: flex;
+      }
+      .gallery img {
+        height: 150px;
+      }
+    }
+  </style>
+  <script>
+    function toggleMenu() {
+      const navMenu = document.getElementById("nav-menu");
+      navMenu.classList.toggle("show");
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Christian Progressive College</h1>
+    <img src="media/logos.png" alt="School Logo" class="logo">
+    <span class="menu-icon" onclick="toggleMenu()">&#9776;</span>
+    <nav>
+      <ul id="nav-menu">
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="staff.html">Staff</a></li>
+        <li><a href="primaryschool.html">Primary School</a></li>
+        <li><a href="highschool.html">High School</a></li>
+        <li><a href="extracurriculum.html">Extra Curriculum</a></li>
+        <li><a href="codeofconduct.html">Code of Conduct</a></li>
+        <li><a href="schoolfees.html">School Fees</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>CPC Stars</h2>
+    <div class="gallery">
+      <img src="media/cpcstar1.jpg" alt="CPC Star 1" />
+      <img src="media/cpcstar2.jpg" alt="CPC Star 2" />
+      <img src="media/cpcstar3.jpg" alt="CPC Star 3" />
+      <img src="media/cpcstar4.jpg" alt="CPC Star 4" />
+      <img src="media/cpcstar5.jpg" alt="CPC Star 5" />
+      <img src="media/cpcstar6.jpg" alt="CPC Star 6" />
+      <img src="media/cpcstar7.jpg" alt="CPC Star 7" />
+      <img src="media/cpcstar8.jpg" alt="CPC Star 8" />
+      <img src="media/cpcstar9.jpg" alt="CPC Star 9" />
+      <img src="media/cpcstar10.jpg" alt="CPC Star 10" />
+
+    </div>
+
+    <h2>Choir</h2>
+    <div class="gallery">
+      <img src="media/choir1.jpg" alt="Choir 1" />
+      <img src="media/choir2.jpg" alt="Choir 2" />
+      <img src="media/choir3.jpg" alt="Choir 3" />
+      <img src="media/choir4.jpg" alt="Choir 4" />
+      <img src="media/choir5.jpg" alt="Choir 5" />
+      <img src="media/choir6.jpg" alt="Choir 6" />
+      <img src="media/choir7.jpg" alt="Choir 7" />
+      <img src="media/choir8.jpg" alt="Choir 8" />
+      <img src="media/choir9.jpg" alt="Choir 9" />
+      <img src="media/choir10.jpg" alt="Choir 10" />
+    </div>
+  </div>
+
+  <!-- Soccer Section -->
+  <div class="container">
+    <h2>Soccer</h2>
+    <div class="gallery">
+      <img src="media/soccer1.jpg" alt="Soccer 1" />
+      <img src="media/soccer2.jpg" alt="Soccer 2" />
+      <img src="media/soccer3.jpg" alt="Soccer 3" />
+      <img src="media/soccer4.jpg" alt="Soccer 4" />
+      <img src="media/soccer5.jpg" alt="Soccer 5" />
+      <img src="media/soccer6.jpg" alt="Soccer 6" />
+      <img src="media/soccer7.jpg" alt="Soccer 7" />
+      <img src="media/soccer8.jpg" alt="Soccer 8" />
+      <img src="media/soccer9.jpg" alt="Soccer 9" />
+      <img src="media/soccer10.jpg" alt="Soccer 10" />
+    </div>
+  </div>
+
+  <!-- Chess Section -->
+  <div class="container">
+    <h2>Chess</h2>
+    <div class="gallery">
+      <img src="media/chess1.jpg" alt="Chess 1" />
+      <img src="media/chess2.jpg" alt="Chess 2" />
+      <img src="media/chess3.jpg" alt="Chess 3" />
+      <img src="media/chess4.jpg" alt="Chess 4" />
+      <img src="media/chess5.jpg" alt="Chess 5" />
+      <img src="media/chess6.jpg" alt="Chess 6" />
+      <img src="media/chess7.jpg" alt="Chess 7" />
+      <img src="media/chess8.jpg" alt="Chess 8" />
+      <img src="media/chess9.jpg" alt="Chess 9" />
+      <img src="media/chess10.jpg" alt="Chess 10" />
+    </div>
+  </div>
+
+  <!-- Swimming Section -->
+  <div class="container">
+    <h2>Swimming</h2>
+    <div class="gallery">
+      <img src="media/swimming1.jpg" alt="Swimming 1" />
+      <img src="media/swimming2.jpg" alt="Swimming 2" />
+      <img src="media/swimming3.jpg" alt="Swimming 3" />
+      <img src="media/swimming4.jpg" alt="Swimming 4" />
+      <img src="media/swimming5.jpg" alt="Swimming 5" />
+      <img src="media/swimming6.jpg" alt="Swimming 6" />
+      <img src="media/swimming7.jpg" alt="Swimming 7" />
+      <img src="media/swimming8.jpg" alt="Swimming 8" />
+      <img src="media/swimming9.jpg" alt="Swimming 9" />
+      <img src="media/swimming10.jpg" alt="Swimming 10" />
+    </div>
+  </div>
+
+  <footer>
+    <p>Please follow us:</p>
+    <div class="social-media-icons">
+      <a href="https://www.instagram.com/christianprogressivecollege?igsh=MWsydXhkdnltdG51Mw==" target="_blank" class="social-icon">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="https://www.tiktok.com/@christianprogressivecol3?_t=ZM-8te3luifLjK&_r=1" target="_blank" class="social-icon">
+        <i class="fa-brands fa-tiktok"></i>
+      </a>
+      
+      <a href="https://www.facebook.com/ChristianProgressiveCollege" target="_blank" class="social-icon">
+        <i class="fa-brands fa-facebook"></i>
+      </a>
+    </div>
+  </footer>
+</body>
+</html>
